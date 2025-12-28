@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
     <link rel="website icon" type="png" href="Images/IMG_20251227_155158.png" />
     <link
@@ -31,7 +37,7 @@
     <header>
       <section>
         <div class="hero-headcontainer">
-          <div class="hero-heading">
+          <div class="hero-heading" id="hero-heading">
             <h1>
               <span>A</span>
               <span>L</span>
@@ -47,8 +53,45 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="#">Shop</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">FAQ's</a></li>
+              <div class="dropdown">
+                <li>
+                  <button class="dropbtn">Contact Us</button>
+                  <div class="dropdown-content">
+                    <a href="https://wa.me/+919103597826"
+                      ><img
+                        src="Images/—Pngtree—whatsapp icon vector_8704827.png"
+                        width="30px"
+                        style="
+                          filter: drop-shadow(
+                            1px 1px 20px rgba(137, 135, 135, 0.833)
+                          );
+                        "
+                    /></a>
+                    <a
+                      href="https://www.instagram.com/atifaltaf001?igsh=MWhpN3Y5aHJmZWw4dA=="
+                      ><img
+                        src="Images/—Pngtree—instagram icon vector_8704817.png"
+                        width="30px"
+                        style="
+                          filter: drop-shadow(
+                            1px 1px 20px rgba(137, 135, 135, 0.833)
+                          );
+                        "
+                    /></a>
+                    <a href="https://github.com/Atifaltaf4444"
+                      ><img
+                        src="Images/github png.png"
+                        width="30px"
+                        style="
+                          filter: drop-shadow(
+                            1px 1px 20px rgba(137, 135, 135, 0.833)
+                          );
+                        "
+                    /></a>
+                  </div>
+                </li>
+              </div>
+              <li><a href="#FAQ's">FAQ's</a></li>
               <li>
                 <a href="#"><span id="spanA">Account</span></a>
               </li>
@@ -72,18 +115,20 @@
             src="Images/IMG_20251227_155158.png"
             width="100px"
             height="auto"
-            alt="hero shoe"
+            alt="Logo"
           />
-          <h1>ALBATROZ</h1>
+          <h1>ALBATRO<span style="color: rgb(154, 1, 1)">Z</span></h1>
           <h4>-Step Beyond.</h4>
           <p>
             We sell sneakers for those who refuse to stay ordinary.<br />
             Step beyond limits. Step into ALBATROZ.
           </p>
-          <button class="hero-btn-A">Get Started</button>
+          <a href="#hero-cards-section"
+            ><button class="hero-btn-A">Get Started</button></a
+          >
         </div>
         <div class="hero-img">
-          <img src="Images/hero img.png" alt="logo" />
+          <img src="Images/hero img.png" alt="Hero Shoe" />
         </div>
       </content>
     </section>
@@ -108,7 +153,7 @@
             <span><i class="fa fa-inr">1600</i></span>
           </div>
 
-          <div class="hero-cards-section">
+          <div class="hero-cards-section" id="hero-cards-section">
             <img
               src="Images/adidas sneaker.png"
               alt="adidas sneaker"
@@ -240,20 +285,53 @@
         </div>
       </content>
     </section>
-
+    <!--============================================================
+              HERO SLIDING CARDS SECTION END
+===========================================================================-->
     <!---=======================================================
                   HERO FOOTER SECTION START
 ============================================================-->
     <footer>
-      <div class="hero-footer-container">
-        <div class="hero-footer-section">
-          <h4>About Us</h4>
-          <p>
-            ALBATROZ is dedicated to providing high-quality sneakers that blend
-            style, comfort, and performance. Our mission is to help you step
-            beyond limits with every stride.
-          </p>
-        </div>
+      <div class="hero-faqs">
+        <h4 id="FAQ's">FAQ's</h4>
+        <select class="faq-options">
+          <option class="faq-options">Q. Why we should choose ALBATROZ?</option>
+          <option class="faq-options">
+            ANS. Because ALBATROZ sells premium quality of sneakers of all
+            popular brands.
+          </option>
+        </select>
+        <select class="faq-options">
+          <option class="faq-options">Q. What is the return policy?</option>
+          <option class="faq-options">
+            ANS. You can return the product within 30 days of delivery in case
+            of any defects.
+          </option>
+        </select>
+        <select class="faq-options">
+          <option class="faq-options">
+            Q. Do you offer international shipping?
+          </option>
+          <option class="faq-options">
+            ANS. Yes, we ship to select countries outside of India. Shipping
+            fees may apply.
+          </option>
+        </select>
+      </div>
+      <div class="hero-footer-section">
+        <h4>About Us</h4>
+        <p>
+          ALBATROZ is dedicated to providing high-quality sneakers that blend
+          style, comfort, and performance. Our mission is to help you step
+          beyond limits with every stride.
+        </p>
+      </div>
+      <a href="#hero-heading">
+        <button id="hero-back-to-topbtn" title="Go to top">
+          <i class="fa fa-arrow-up"></i></button
+      ></a>
+      <div class="hero-copyrights">
+        <p>©2025 ALBATROZ.All rights reserved.</p>
       </div>
     </footer>
 

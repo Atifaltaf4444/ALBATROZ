@@ -135,6 +135,107 @@ html {
   border-radius: 30px;
   box-shadow: 0 16px 15px rgb(123, 123, 123);
 }
+/*========================================================
+            HMBURGER MENU START
+=========================================================*/
+
+.sidebar {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgb(110, 0, 0);
+  background-color: #000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+  text-decoration: none;
+}
+.sidebar li {
+  width: 100%;
+  position: relative;
+  left: 20px;
+  padding: 10px 40px;
+}
+.sidebar li a {
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar li a:hover {
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+  transform-origin: start;
+  background: none;
+}
+
+.hamburger-span {
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  background-color: #710303;
+  padding: 15px 110px 15px 50px;
+  left: -49px;
+}
+.hamburger-span:hover {
+  color: azure;
+  text-decoration: none;
+  box-shadow: 6px 15px 26px rgba(168, 1, 1, 0.815);
+  transition: 0.2s ease-in-out;
+}
+.hamburger-dropbtn {
+  color: #fff;
+  background-color: #000;
+  font-size: 17px;
+  border: none;
+}
+.hamburger-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 100;
+  transition: 1s ease-in-out;
+  transform: translateX(-20px);
+}
+.hamburger-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+  transform: translateX(-20px);
+}
+.hamburger-dropdown-content a:hover {
+  background-color: rgb(1, 0, 0);
+  border-radius: 10px;
+  box-shadow: #ffffff 0px 0px 10px;
+  transition: 0.2s ease-in-out;
+  transform: translateX(-20px);
+}
+.hamburger-dropdown:hover .hamburger-dropdown-content {
+  display: flex;
+}
+.hamburger-dropdown:hover .hamburger-dropbtn {
+  background-color: transparent;
+  box-shadow: 0 6px 15px rgb(75, 75, 75);
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+  transform: translateX(20px);
+}
+.menu-button {
+  display: none;
+}
+
 /*=====  End of HERO HEAD CONTAINER STYLES  ======*/
 /*==========================================
 = HERO CONTENT STYLES SECTION ONE
@@ -518,3 +619,162 @@ html {
   }
 }
 /*==========END OF HERO ANIMATIONS==========*/
+/*===============================================
+  MEDIA RESPONSIVE START MOBILE(MAX WIDTH 670PX)
+===================================================*/
+@media (max-width: 670px) {
+  .hidden-menu {
+    display: flex;
+  }
+  .menu-button {
+    display: block;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+  }
+  .hero-headcontainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .hero-navbar ul li a {
+    display: none;
+  }
+  .hero-heading {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+    padding-bottom: -50px;
+  }
+  #span-z {
+    font-size: 30px;
+    color: rgb(154, 1, 1);
+    position: relative;
+    top: 3px;
+    left: -5px;
+  }
+  .dropbtn {
+    display: none;
+  }
+  .sidebar {
+    position: relative;
+    right: -110px;
+
+    color: #fff;
+    background-color: transparent;
+  }
+  .sidebar > li a {
+    color: #fff;
+    display: block;
+  }
+  .hamburger-span {
+    display: block;
+    color: #fff;
+  }
+
+  .hero-copyrights p {
+    position: relative;
+    left: -3px;
+    font-size: 14px;
+  }
+  #hero-back-to-topbtn {
+    position: relative;
+    left: 148px;
+    font-size: 14px;
+  }
+
+  .faq-options {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    border-radius: 2em;
+    box-shadow: 3px 5px 18px rgb(154, 1, 1);
+    border: 2px ridge rgb(154, 1, 1);
+    scroll-behavior: smooth;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    position: relative;
+    left: -1px;
+    font-size: 13px;
+    width: 300px;
+  }
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+    animation: appear linear;
+    animation-range: entry 0% cover 40%;
+  }
+
+  .hero-section-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+    left: -50px;
+    margin-bottom: 15px;
+  }
+  .hero-section-left h1 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .hero-section-left h4 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+    left: 100px;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  .hero-section-left p {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    font-size: 12px;
+    font-weight: 120;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .hero-section-left button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(154, 1, 1);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgb(75, 75, 75);
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 30px;
+  }
+
+  .hero-img img {
+    min-width: 200px;
+    max-width: 340px;
+    height: auto;
+    position: relative;
+    left: -50px;
+    bottom: 20px;
+    filter: drop-shadow(1px 1px 20px rgba(137, 135, 135, 0.833));
+    animation: float 2.5s ease-in-out infinite;
+  }
+}

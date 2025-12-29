@@ -34,6 +34,10 @@
     <!--===================================================
                        Header Section
     ============================================-->
+
+    <!--====================================================
+               MAIN NAVBAR AND LOGO SECTION
+    ============================================================-->
     <header>
       <section>
         <div class="hero-headcontainer">
@@ -95,11 +99,83 @@
               <li>
                 <a href="#"><span id="spanA">Account</span></a>
               </li>
+              <li class="menu-button" onclick="showSidebar()">
+                <i
+                  class="fa fa-bars"
+                  style="font-size: 30px; position: relative; bottom: 5px"
+                ></i>
+              </li>
             </ul>
           </nav>
         </div>
       </section>
     </header>
+    <!--================================================================
+              END OF MAIN NAVBAR AND LOGO SECTION
+=====================================================================-->
+
+    <!--====================================================================
+                START OF HAMBURGER MENU SECTION
+============================================================================-->
+    <section>
+      <nav>
+        <ul class="sidebar">
+          <li
+            onclick="hideSidebar()"
+            class="fa fa-times"
+            style="position: relative; left: 170px; top: 15px; font-size: 24px"
+          ></li>
+          <li class="hidden-menu"><a href="index.html">Home</a></li>
+          <li class="hidden-menu"><a href="#">Shop</a></li>
+          <div class="hamburger-dropdown">
+            <li class="hidden-menu">
+              <button class="hamburger-dropbtn">Contact Us</button>
+              <div class="hamburger-dropdown-content">
+                <a href="https://wa.me/+919103597826"
+                  ><img
+                    src="Images/—Pngtree—whatsapp icon vector_8704827.png"
+                    width="30px"
+                    style="
+                      filter: drop-shadow(
+                        1px 1px 20px rgba(137, 135, 135, 0.833)
+                      );
+                    "
+                /></a>
+                <a
+                  href="https://www.instagram.com/atifaltaf001?igsh=MWhpN3Y5aHJmZWw4dA=="
+                  ><img
+                    src="Images/—Pngtree—instagram icon vector_8704817.png"
+                    width="30px"
+                    style="
+                      filter: drop-shadow(
+                        1px 1px 20px rgba(137, 135, 135, 0.833)
+                      );
+                    "
+                /></a>
+                <a href="https://github.com/Atifaltaf4444"
+                  ><img
+                    src="Images/github png.png"
+                    width="30px"
+                    style="
+                      filter: drop-shadow(
+                        1px 1px 20px rgba(137, 135, 135, 0.833)
+                      );
+                    "
+                /></a>
+              </div>
+            </li>
+          </div>
+          <li class="hidden-menu"><a href="#FAQ's">FAQ's</a></li>
+          <li class="hidden-menu">
+            <a href="#"><span class="hamburger-span">Account</span></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--=========================================================
+                 END OF HAMBURGER MENU SECTION
+    ==============================================================-->
+
     <!--===================================================
                      Header End
 =========================================================-->

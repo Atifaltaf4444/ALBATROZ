@@ -750,7 +750,7 @@ html {
     min-width: 300px;
     max-width: 300px;
     font-size: 12px;
-    font-weight: 120;
+    font-weight: 280;
     line-height: 1.6;
     margin-bottom: 30px;
   }
@@ -780,5 +780,8 @@ html {
   }
   .hero-footer-section h4 {
     font-size: 30px;
+  }
+  .hero-footer-section p {
+    font-weight: 300;
   }
 }
